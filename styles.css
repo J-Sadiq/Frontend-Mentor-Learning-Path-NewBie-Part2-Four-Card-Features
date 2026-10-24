@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Grey-500: hsl(234, 12%, 34%);
+  --Grey-400: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "Popins";
+  src: url("fonts/Poppins-Thin.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Popins";
+  src: url("fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Popins";
+  src: url("fonts/Poppins-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Popins";
+  src: url("fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
