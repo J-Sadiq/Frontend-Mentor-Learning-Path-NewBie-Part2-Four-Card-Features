@@ -11,6 +11,7 @@
   --Blue: hsl(212, 86%, 64%);
   --Grey-500: hsl(234, 12%, 34%);
   --Grey-400: hsl(212, 6%, 44%);
+  --bg-white: rgb(240, 240, 240);
   --White: hsl(0, 0%, 100%);
 }
 
@@ -34,4 +35,95 @@
   font-family: "Popins";
   src: url("fonts/Poppins-Bold.ttf");
   font-weight: 700;
+}
+
+html {
+  font-size: 62.25%;
+}
+
+body {
+  font-family: "Popins";
+  font-weight: 400;
+  background-color: var(--bg-white);
+  color: var(--Grey-500);
+}
+
+main {
+  min-height: 100vh;
+  max-width: 110rem;
+  width: 95%;
+  margin: 8rem auto;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.4rem;
+}
+header {
+  max-width: 48rem;
+  text-align: center;
+}
+#title {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+#title span {
+  font-weight: 200;
+}
+p {
+  color: var(--Grey-400);
+  font-size: 1.5;
+}
+
+header p {
+  font-size: 1.4rem;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--White);
+  padding: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 12px rgba(4, 4, 237, 0.1);
+}
+
+.card-description h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+.card-description p {
+  font-size: 1.4rem;
+}
+.feature-card img {
+  width: 4.4rem;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.4rem;
+  align-items: center;
+}
+.supervisor {
+  border-top: 4px solid var(--Cyan);
+}
+
+.team-builder {
+  border-top: 4px solid var(--Red);
+}
+
+.karma {
+  border-top: 4px solid var(--Orange);
+}
+.calculator {
+  border-top: 4px solid var(--Blue);
 }
