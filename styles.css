@@ -127,3 +127,45 @@ header p {
 .calculator {
   border-top: 4px solid var(--Blue);
 }
+
+@media (max-width: 62.5rem) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 47rem) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media (max-width: 36.25rem) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2.4rem;
+    align-items: center;
+  }
+  main {
+    max-width: 36rem;
+    min-width: 32rem;
+    width: 80%;
+    margin: 8rem auto;
+  }
+  html {
+    font-size: 43.75%;
+  }
+  #title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
